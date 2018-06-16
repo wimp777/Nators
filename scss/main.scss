@@ -1,11 +1,15 @@
-// Defined Variables
+/*
+Defined Variables
+*/
 
 $lightgreen: rgba(126, 213, 111, 0.8);
 $mediumgreen: #55c57a;
 $darkgreen: rgba(40, 180, 131, 0.8);
 
 
-// Base Styles
+/* 
+Base Styles
+*/ 
 
 * {
     box-sizing: border-box;
@@ -14,15 +18,16 @@ $darkgreen: rgba(40, 180, 131, 0.8);
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
     color: #777;
 }
 
-// Main CSS
-
+/*
+ Main CSS
+*/
 .header {
     height: 95vh;
     background-image: linear-gradient(to right bottom, $lightgreen, $darkgreen) , url('../img/hero.jpg');
@@ -53,17 +58,61 @@ body {
     color: white;
     text-transform: uppercase;
 
+    backface-visibility: hidden;
+
     .heading-primary-main {
         display: block;
         font-size: 60px;
         font-weight: 400;
         letter-spacing: 35px;
+
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
     }
 
     .heading-primary-sub {
         display: block;
         font-size: 20px;
-        font-weight: 200;
+        font-weight: 300;
         letter-spacing: 17.4px;
+
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
     }
 }
