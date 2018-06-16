@@ -28,6 +28,8 @@ body {
 /*
  Main CSS
 */
+
+// Header Section
 .header {
     height: 95vh;
     background-image: linear-gradient(to right bottom, $lightgreen, $darkgreen) , url('../img/hero.jpg');
@@ -52,12 +54,13 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
     color: white;
     text-transform: uppercase;
-
+    margin-bottom: 60px;
     backface-visibility: hidden;
 
     .heading-primary-main {
@@ -116,3 +119,31 @@ body {
         transform: translate(0);
     }
 }
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.btn-white {
+    background-color: white;
+    color: #777;
+}
+
+// End Header
