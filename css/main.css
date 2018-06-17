@@ -4,18 +4,25 @@ Defined Variables
 /* 
 Base Styles
 */
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+html {
+  font-size: 62.5%; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0; }
 
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
-  color: #777; }
+  color: #777;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /*
  Main CSS
@@ -34,10 +41,10 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px; }
+  top: 4rem;
+  left: 4rem; }
   .logo-box .logo {
-    height: 35px; }
+    height: 3.5rem; }
 
 .wrapper {
   position: absolute;
@@ -51,14 +58,14 @@ body {
 .heading-primary {
   color: white;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
   .heading-primary .heading-primary-main {
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     -webkit-animation-name: moveInLeft;
     animation-name: moveInLeft;
     -webkit-animation-duration: 1s;
@@ -67,9 +74,9 @@ body {
     animation-timing-function: ease-out; }
   .heading-primary .heading-primary-sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 300;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.7rem;
     -webkit-animation-name: moveInRight;
     animation-name: moveInRight;
     -webkit-animation-duration: 1s;
@@ -80,12 +87,12 @@ body {
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px); }
+    -webkit-transform: translateX(-10rem);
+    transform: translateX(-10rem); }
   80% {
     opacity: 0.5;
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px); }
+    -webkit-transform: translateX(1rem);
+    transform: translateX(1rem); }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
@@ -94,12 +101,12 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px); }
+    -webkit-transform: translateX(-10rem);
+    transform: translateX(-10rem); }
   80% {
     opacity: 0.5;
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px); }
+    -webkit-transform: translateX(1rem);
+    transform: translateX(1rem); }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
@@ -108,12 +115,12 @@ body {
 @-webkit-keyframes moveInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px); }
+    -webkit-transform: translateX(10rem);
+    transform: translateX(10rem); }
   80% {
     opacity: 0.5;
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px); }
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem); }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
@@ -122,12 +129,12 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px); }
+    -webkit-transform: translateX(10rem);
+    transform: translateX(10rem); }
   80% {
     opacity: 0.5;
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px); }
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem); }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
@@ -137,26 +144,26 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s; }
 
 .btn:hover {
-  -webkit-transform: translateY(-3px);
-  -ms-transform: translateY(-3px);
-  transform: translateY(-3px);
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  -webkit-transform: translateY(-0.3rem);
+  -ms-transform: translateY(-0.3rem);
+  transform: translateY(-0.3rem);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .btn:active {
-  -webkit-transform: translateY(-1px);
-  -ms-transform: translateY(-1px);
-  transform: translateY(-1px);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  -webkit-transform: translateY(-0.1rem);
+  -ms-transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn-white {
   background-color: white;
