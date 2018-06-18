@@ -56,7 +56,7 @@ body {
   text-align: center; }
 
 .heading-primary {
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 6rem;
   -webkit-backface-visibility: hidden;
@@ -166,5 +166,5 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn-white {
-  background-color: white;
+  background-color: #fff;
   color: #777; }

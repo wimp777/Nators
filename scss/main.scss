@@ -5,7 +5,8 @@ Defined Variables
 $lightgreen: rgba(126, 213, 111, 0.8);
 $mediumgreen: #55c57a;
 $darkgreen: rgba(40, 180, 131, 0.8);
-
+$graydark: #777;
+$white:#fff;
 
 /* 
 Base Styles
@@ -27,7 +28,7 @@ body {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.7;
-    color: #777;
+    color: $graydark;
     box-sizing: border-box;
 }
 
@@ -64,7 +65,7 @@ body {
 }
 
 .heading-primary {
-    color: white;
+    color: $white;
     text-transform: uppercase;
     margin-bottom: 6rem;
     backface-visibility: hidden;
@@ -148,8 +149,8 @@ body {
 }
 
 .btn-white {
-    background-color: white;
-    color: #777;
+    background-color: $white;
+    color: $graydark;
 }
 
 // End Header
