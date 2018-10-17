@@ -257,7 +257,7 @@
     background-color: $graylight-1;
     padding: 25rem 0 50rem 0;
     margin-top: -12rem;
-    
+
 }
 
 .card {
@@ -266,7 +266,6 @@
     position: relative;
 
     &-side {
-        background-color: blue;
         height: 50rem;
         transition: all .6s ease;
         font-size: 2rem;
@@ -278,14 +277,19 @@
         backface-visibility: hidden;
         -moz-backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
+        border-radius: 6px;
+        box-shadow: 0 1.5rem 4rem rgba(black, .15)
 
         &-front {
             background-color: $white;
         }
 
         &-back {
-            background-color: purple;
             transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $card-orange-light, $card-orange-dark)
+            }
         }
     }
 
