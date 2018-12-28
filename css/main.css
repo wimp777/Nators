@@ -443,3 +443,23 @@ body {
         padding: 1rem; }
         .card-details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card-price {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: #fff; }
+  .card-price-h {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .card-price-value {
+    font-size: 6rem;
+    font-weight: 100;
+    margin-bottom: 8rem; }

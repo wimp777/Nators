@@ -354,5 +354,33 @@
         }
     }
 
+    // Back Side Card Style
+    &-cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &-price {
+        text-align: center;
+        margin-bottom: 8rem;
+        color: $white;
+    }
+
+    &-price-h {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    &-price-value {
+        font-size: 6rem;
+        font-weight: 100;
+        margin-bottom: 8rem;
+    }
+    
 }
+
 
