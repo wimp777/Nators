@@ -290,6 +290,14 @@
             &-1 {
                 background-image: linear-gradient(to right bottom, $card-orange-light, $card-orange-dark)
             }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $card-green-light, $card-green-dark)
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $card-blue-light, $card-blue-dark)
+            }
         }
     }
 
@@ -312,6 +320,14 @@
         &-1 {
             background-image: linear-gradient(to right bottom, $card-orange-light, $card-orange-dark), url(../img/nat-5.jpg);
         }
+
+        &-2 {
+            background-image: linear-gradient(to right bottom, $card-green-light, $card-green-dark), url(../img/nat-6.jpg);
+        }
+
+        &-3 {
+            background-image: linear-gradient(to right bottom, $card-blue-light, $card-blue-dark), url(../img/nat-7.jpg);
+        }
     }
 
     &-heading {
@@ -332,6 +348,14 @@
 
         &-1 {
             background-image: linear-gradient(to right bottom, rgba($card-orange-light, .85), rgba($card-orange-dark, .85));
+        }
+
+        &-2 {
+            background-image: linear-gradient(to right bottom, rgba($card-green-light, .85), rgba($card-green-dark, .85));
+        }
+
+        &-3 {
+            background-image: linear-gradient(to right bottom, rgba($card-blue-light, .85), rgba($card-blue-dark, .85));
         }
     }
 
